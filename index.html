@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+
+    <div id="result"></div>
+    <div id="div_padre" class="padre">
+
+        <div id="hijo_1" class="hijos">
+
+            HIJO 1
+        </div>
+
+        <div id="hijo_2" class="hijos">
+
+            HIJO 2
+        </div>
+
+        <div id="hijo_3" class="hijos">
+
+            HIJO 3
+        </div>
+
+
+
+
+    </div>
+
+
+    <h1 onclick="show('justify-content')"  >JUSTIFY-CONTENT</h1>
+    <hr>
+    <div id="div-jcontent">
+        <div>
+            <button onclick="applyStyles('justify-content-flex-start')">justify-content:flex-start</button>
+            <button onclick="applyStyles('justify-content-center')">justify-content:center</button>
+            <button onclick="applyStyles('justify-content-flex-end')">justify-content:flex-end</button>
+            <button onclick="applyStyles('justify-content-space-evenly')">justify-content:space-evenly</button>
+            <button onclick="applyStyles('justify-content-space-around')">justify-content:space-around</button>
+            <button onclick="applyStyles('justify-content-space-between')">justify-content:space-between</button>
+
+        </div>
+      
+    <button class="close-button" onclick="cerrar('justify-content')">Cerrar</button>
+    </div>
+
+
+    
+
+    <h1 onclick="show('flex-direction')">FLEX-DIRECTION</h1>
+    <hr>
+
+    <div id="div-fdirection">
+        <div>
+
+            <button onclick="applyStyles('flex-direction-row')">flex-direction-row</button>
+            <button onclick="applyStyles('flex-direction-column')">flex-direction-column</button>
+            <button onclick="applyStyles('flex-direction-row-reverse')">flex-direction-row-reverse</button>
+            <button onclick="applyStyles('flex-direction-column-reverse')">flex-direction-column-reverse</button>
+    
+        </div>
+
+        <button class="close-button" onclick="cerrar('flex-direction')">Cerrar</button>
+
+
+    </div>
+
+
+
+    <h1 onclick="show('align-items')">ALIGN-ITEMS</h1>
+    <hr>
+
+    <div id="div-aitems">
+        <div>
+            <button onclick="applyStyles('align-items-center')">align-items-center</button>
+            <button onclick="applyStyles('align-items-flex-start')">align-items-flex-start</button>
+            <button onclick="applyStyles('align-items-flex-end')">align-items-flex-end</button>
+            <button onclick="applyStyles('align-items-stretch')">align-items-stretch</button>
+            <button onclick="applyStyles('align-items-baseline')">align-items-baseline</button>
+    
+
+        </div>
+        <button class="close-button" onclick="cerrar('align-items')">Cerrar</button>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
