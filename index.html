@@ -12,86 +12,151 @@
 
 <body>
 
+    <section class="slide-top">
 
-    <div id="result"></div>
-    <div id="div_padre" class="padre">
+        <div id="result"></div>
+        <div id="div_padre" class="padre  ">
 
-        <div id="hijo_1" class="hijos">
+            <div id="hijo_1" class="hijos">
 
-            HIJO 1
+                HIJO 1
+            </div>
+
+            <div id="hijo_2" class="hijos">
+
+                HIJO 2
+            </div>
+
+            <div id="hijo_3" class="hijos">
+
+                HIJO 3
+            </div>
+            <div id="hijo_3" class="hijos">
+
+                HIJO 4
+            </div>
+
+
+
+            <div id="hijo_5" class="hijos hidden">
+
+                HIJO 5
+            </div>
+
+            <div id="hijo_6" class="hijos hidden">
+
+                HIJO 6
+            </div>
+
+            <div id="hijo_7" class="hijos hidden">
+
+                HIJO 7
+            </div>
+            <div id="hijo_8" class="hijos hidden">
+
+                HIJO 8
+            </div>
+
+
+
         </div>
 
-        <div id="hijo_2" class="hijos">
 
-            HIJO 2
+        <h1 onclick="show('justify-content')">JUSTIFY-CONTENT</h1>
+        <hr>
+        <div id="div-jcontent">
+            <div>
+                <button onclick="applyStyles('justify-content-flex-start')">flex-start</button>
+                <button onclick="applyStyles('justify-content-center')">center</button>
+                <button onclick="applyStyles('justify-content-flex-end')">flex-end</button>
+                <button onclick="applyStyles('justify-content-space-evenly')">space-evenly</button>
+                <button onclick="applyStyles('justify-content-space-around')">space-around</button>
+                <button onclick="applyStyles('justify-content-space-between')">space-between</button>
+
+            </div>
+
+            <button class="close-button" onclick="cerrar('justify-content')">Cerrar</button>
         </div>
 
-        <div id="hijo_3" class="hijos">
 
-            HIJO 3
+
+
+        <h1 onclick="show('flex-direction')">FLEX-DIRECTION</h1>
+        <hr>
+
+        <div id="div-fdirection">
+            <div>
+
+                <button onclick="applyStyles('flex-direction-row')">row</button>
+                <button onclick="applyStyles('flex-direction-column')">column</button>
+                <button onclick="applyStyles('flex-direction-row-reverse')">row-reverse</button>
+                <button onclick="applyStyles('flex-direction-column-reverse')">column-reverse</button>
+
+            </div>
+
+            <button class="close-button" onclick="cerrar('flex-direction')">Cerrar</button>
+
+
         </div>
 
 
 
+        <h1 onclick="show('align-items')">ALIGN-ITEMS</h1>
+        <hr>
 
-    </div>
-
-
-    <h1 onclick="show('justify-content')"  >JUSTIFY-CONTENT</h1>
-    <hr>
-    <div id="div-jcontent">
-        <div>
-            <button onclick="applyStyles('justify-content-flex-start')">justify-content:flex-start</button>
-            <button onclick="applyStyles('justify-content-center')">justify-content:center</button>
-            <button onclick="applyStyles('justify-content-flex-end')">justify-content:flex-end</button>
-            <button onclick="applyStyles('justify-content-space-evenly')">justify-content:space-evenly</button>
-            <button onclick="applyStyles('justify-content-space-around')">justify-content:space-around</button>
-            <button onclick="applyStyles('justify-content-space-between')">justify-content:space-between</button>
-
-        </div>
-      
-    <button class="close-button" onclick="cerrar('justify-content')">Cerrar</button>
-    </div>
-
-
-    
-
-    <h1 onclick="show('flex-direction')">FLEX-DIRECTION</h1>
-    <hr>
-
-    <div id="div-fdirection">
-        <div>
-
-            <button onclick="applyStyles('flex-direction-row')">flex-direction-row</button>
-            <button onclick="applyStyles('flex-direction-column')">flex-direction-column</button>
-            <button onclick="applyStyles('flex-direction-row-reverse')">flex-direction-row-reverse</button>
-            <button onclick="applyStyles('flex-direction-column-reverse')">flex-direction-column-reverse</button>
-    
-        </div>
-
-        <button class="close-button" onclick="cerrar('flex-direction')">Cerrar</button>
-
-
-    </div>
+        <div id="div-aitems">
+            <div>
+                <button onclick="applyStyles('align-items-center')">center</button>
+                <button onclick="applyStyles('align-items-flex-start')">flex-start</button>
+                <button onclick="applyStyles('align-items-flex-end')">flex-end</button>
+                <button onclick="applyStyles('align-items-stretch')">stretch</button>
+                <button onclick="applyStyles('align-items-baseline')">baseline</button>
 
 
 
-    <h1 onclick="show('align-items')">ALIGN-ITEMS</h1>
-    <hr>
-
-    <div id="div-aitems">
-        <div>
-            <button onclick="applyStyles('align-items-center')">align-items-center</button>
-            <button onclick="applyStyles('align-items-flex-start')">align-items-flex-start</button>
-            <button onclick="applyStyles('align-items-flex-end')">align-items-flex-end</button>
-            <button onclick="applyStyles('align-items-stretch')">align-items-stretch</button>
-            <button onclick="applyStyles('align-items-baseline')">align-items-baseline</button>
-    
+            </div>
+            <button class="close-button" onclick="cerrar('align-items')">Cerrar</button>
 
         </div>
-        <button class="close-button" onclick="cerrar('align-items')">Cerrar</button>
 
-    </div>
+        <h1 onclick="show('align-self')">ALIGN-SELF</h1>
+        <div id="div-aself">
+            <div>
+
+                <button onclick="applyStyles('align-self-flex-start')">flex-start</button>
+                <button onclick="applyStyles('align-self-center')">center</button>
+                <button onclick="applyStyles('align-self-flex-end')">flex-end</button>
+                <button onclick="applyStyles('align-self-baseline')">baseline</button>
+
+
+            </div>
+            <button class="close-button" onclick="cerrar('align-self')">Cerrar</button>
+
+        </div>
+        <hr>
+        <h1 onclick="show('flex-wrap')">FLEX-WRAP</h1>
+
+        <div id="div-fwrap">
+            <div>
+                <button onclick="applyStyles('flex-wrap')">flex-wrap</button>
+                <button onclick="applyStyles('flex-no-wrap')">flex-no-wrap</button>
+                <button onclick="applyStyles('flex-wrap-reverse')">wrap-reverse</button>
+                <button onclick="applyStyles('flex-wrap-inherit')">inherit</button>
+                <button onclick="applyStyles('flex-wrap-initial')">initial</button>
+
+
+
+            </div>
+            <button class="close-button" onclick="cerrar('flex-wrap')">Cerrar</button>
+
+        </div>
+
+
+        <button onclick="location.reload();" id="reset">RESET</button>
+
+
+
+    </section>
 
 
 
