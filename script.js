@@ -5,6 +5,7 @@ function applyStyles(style) {
   if (style == "justify-content-center") {
     stylesPadre.justifyContent = "center";
     document.getElementById("result").innerHTML = "justify-content-center";
+     
   } else if (style == "justify-content-flex-start") {
     stylesPadre.justifyContent = "flex-start";
     document.getElementById("result").innerHTML = "flex-start";
@@ -83,6 +84,13 @@ function applyStyles(style) {
     stylesPadre.flexWrap = "initial";
     document.getElementById("result").innerHTML = "initial";
   }
+  //FLEX FLOW
+
+  else if (style == "flex-flow") {
+    stylesPadre.flexFlow = "column-reverse wrap-reverse";
+    document.getElementById("result").innerHTML = "flex-flow: column-reverse wrap-reverse";
+  }
+ 
 }
 
 function show(divs) {
@@ -102,6 +110,12 @@ function show(divs) {
 
     document.getElementById("div-fwrap").style.display = "block";
   }
+  else if (divs == "flex-flow") {
+    document.getElementById("div-fflow").style.display = "block";
+  }
+
+
+ 
 }
 
 function cerrar(divs) {
@@ -120,5 +134,8 @@ function cerrar(divs) {
     document.getElementById("hijo_8").style.display = "none";
 
     document.getElementById("div-fwrap").style.display = "none";
+  }
+  else if (divs == "flex-flow") {
+    document.getElementById("div-fflow").style.display = "none";
   }
 }
